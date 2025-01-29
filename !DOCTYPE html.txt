@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callix Research - Medical Innovation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f3f9fd; /* Light background for consistency */
+            color: #333; /* Main text color */
+        }
+        .section {
+            padding: 4rem 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #e7eff6, #ffffff); /* Subtle gradient */
+            color: #333;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .product-card, .feature-box {
+            border: 1px solid #b0c9dc; /* Matching border for consistency */
+            border-radius: 1rem; /* Rounded corners */
+            padding: 1.5rem;
+            background: #ffffff; /* White background for contrast */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            margin-bottom: 2rem;
+        }
+        h1, h2, h3 {
+            font-family: Arial, sans-serif;
+            color: #5885A7; /* Theme heading color */
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555; /* Secondary text color */
+        }
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.8rem;
+            text-indent: -1.2rem; /* Hanging indent */
+            padding-left: 1.2rem; /* Align bullets */
+        }
+        .grid-three {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+            gap: 2rem;
+        }
+        .grid-two {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+            gap: 2rem;
+        }
+        a {
+            color: inherit; /* Inherits the color of the surrounding text */
+            text-decoration: none; /* Removes the underline */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Homepage Content -->
+<section class="hero">
+    <div class="container">
+        <h1>Transforming Medicine, Empowering Health</h1>
+        <p>Pioneering sustainable medical technologies to revolutionize global healthcare through innovations in infection prevention, pain management, and neurological treatment.</p>
+        <div>
+            <p>With over 100 U.S. patents and 300+ international patents, Callix Research develops breakthrough medical technologies that combine innovation with accessibility.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #e7eff6;">
+    <div class="container">
+        <h2>Our Impact</h2>
+        <div class="grid-three">
+            <div class="feature-box">
+                <h3>Sustainable Innovation</h3>
+                <p>Leading the way in ecological medical solutions that prioritize both patient outcomes and environmental responsibility.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Global Reach</h3>
+                <p>Our technologies, licensed to industry leaders like Abbott Laboratories and Becton Dickinson, have generated over $1.5 billion in revenues.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Award-Winning Research</h3>
+                <p>Recognized with the prestigious R&D 100 Award each decade for breakthrough innovations in medical technology.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Page Content -->
+<section class="section" style="background-color: #f3f9fd;">
+    <div class="container">
+        <h2 style="text-align: center;">Breakthrough Technologies</h2>
+        <div class="grid-two">
+            <div class="product-card">
+                <h3>Transnasal Device: Advanced Respiratory Protection</h3>
+                <p>A revolutionary approach to respiratory health protection, our patent-pending device creates a protective barrier in nasal passages, offering:</p>
+                <ul>
+                    <li>Non-invasive pathogen defense system</li>
+                    <li>Ideal for healthcare workers and high-risk environments</li>
+                    <li>Easy integration into daily protective routines</li>
+                    <li>Proven antimicrobial properties</li>
+                </ul>
+                <p><strong>Patent Status:</strong> Pending</p>
+            </div>
+            <div class="product-card">
+                <h3>Placebo-Cued Medicine: Reimagining Pain Management</h3>
+                <p>Our patented technology transforms pain management through innovative sensory cuing, helping patients:</p>
+                <ul>
+                    <li>Reduce opioid dependency while maintaining pain relief</li>
+                    <li>Activate natural pain-relieving responses</li>
+                    <li>Experience fewer withdrawal symptoms</li>
+                    <li>Maintain quality of life during treatment</li>
+                </ul>
+                <p><strong>Patent Status:</strong> <a href="https://patents.google.com/patent/US11123429" target="_blank">U.S. Patent No. 11,123,429</a></p>
+            </div>
+            <div class="product-card">
+                <h3>Neuro-Olfactory Technology: Breakthrough in Symptom Prevention</h3>
+                <p>Our patented nasal spray technology offers innovative treatment for odor-triggered conditions:</p>
+                <ul>
+                    <li>Prevention of odor-triggered migraines</li>
+                    <li>Management of pregnancy-related nausea</li>
+                    <li>Non-toxic, preservative-free formula</li>
+                    <li>Potential applications in appetite control</li>
+                </ul>
+                <p><strong>Patent Status:</strong> <a href="https://patents.google.com/patent/US9629868" target="_blank">U.S. Patent No. 9,629,868</a></p>
+            </div>
+            <div class="product-card">
+                <h3>Placebo-Cued Medicine: Neural Applications</h3>
+                <p>Our patented technology represents a breakthrough in treating conditions influenced by neural pathways—including depression, anxiety, pain, and sleep disorders:</p>
+                <ul>
+                    <li>Enhanced therapeutic outcomes through activation of natural responses</li>
+                    <li>Potential for reduced medication dependency while maintaining efficacy</li>
+                    <li>Applications across multiple mental health and pain conditions</li>
+                    <li>Strong patent protection and market exclusivity opportunity</li>
+                </ul>
+                <p><strong>Patent Status:</strong> <a href="https://patents.google.com/patent/US10556011" target="_blank">U.S. Patent No. 10,556,011</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
