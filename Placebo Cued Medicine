@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Placebo-Cued Medicine - Neurologically Mediated Conditions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f3f9fd; /* Light background to match the theme */
+            color: #333; /* Main text color */
+        }
+        .section {
+            padding: 4rem 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #e7eff6, #ffffff); /* Subtle gradient for hero section */
+            color: #333;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        /* Change the subheading text (the <p> below the image in the hero section) 
+           to the theme heading colour (#5885A7) */
+        .hero p {
+            color: #5885A7;
+        }
+        .feature-box {
+            border: 1px solid #b0c9dc; /* Matching theme border */
+            border-radius: 1rem; /* Rounded corners for the boxes */
+            padding: 1.5rem;
+            background: #fffbf5; /* White background for contrast */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        h1, h2, h3, h4 {
+            font-family: Arial, sans-serif;
+            color: #424b80; /* Theme heading color */
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555; /* Dark gray for text readability */
+        }
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.8rem;
+            text-indent: -1.2rem; /* Hanging indent for bullets */
+            padding-left: 1.2rem; /* Align bullets with text */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Horizontal layout for boxes */
+            gap: 2rem;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #424b80;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        button:hover {
+            background-color: #476d8c; /* Darker shade for hover effect */
+        }
+        .hero img {
+            max-width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #001636;
+            color: #FFFFFF;
+            padding: 40px 20px 80px;
+            font-family: Arial, sans-serif;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+/* New styling for the footer bottom with extra space */
+    .footer-bottom {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #bbc6cd;
+      font-size: 12px;
+      margin-top: 60px; /* Increased space (approx. 2 blank lines) */
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 30px;
+            min-height: 120px;
+        }
+        .footer-logo {
+            flex: 1;
+            min-width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-logo img {
+            max-height: 120px;
+            width: auto;
+        }
+        .footer-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            margin-top: 0;
+        }
+        .footer-link {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .contact-link {
+            color: #FFFFFF;
+            margin-top: auto;
+        }
+        .footer-contact {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .footer-contact p {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        .footer-contact a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .grid-three, .grid-two, .grid-four {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 0.95rem;
+            }
+            .section {
+                padding: 2rem 1rem;
+            }
+            .hero {
+                padding: 2.5rem 1rem;
+            }
+            /* Footer Mobile Styles */
+            footer {
+                padding: 30px 15px;
+            }
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                min-height: auto;
+            }
+            .footer-logo, .footer-nav, .footer-contact {
+                flex: none;
+                width: 100%;
+                text-align: center;
+                height: auto;
+            }
+            .footer-nav {
+                height: auto;
+                gap: 20px;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .footer-logo img {
+                max-height: 100px;
+            }
+            .footer-contact {
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            footer {
+                padding: 20px 10px;
+            }
+            .footer-logo img {
+                max-height: 80px;
+            }
+            .footer-link {
+                font-size: 14px;
+            }
+            .footer-contact p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Updated Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Placebo-Cued Medicine Technology</h1>
+        
+        <img src="https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/IMG_3656.jpg" alt="Placebo-Cued Medicine Technology">
+        <br><br>
+        <p>Breakthrough Innovation in Neural Pathway Treatment</p>
+    </div>
+</section>
+
+<section class="section" style="background-color: #e7eff6;">
+    <div class="container">
+        <h2>Technology Overview</h2>
+        <div class="feature-box">
+            <p>Our patented Placebo-Cued Medicine technology extends to a broad range of neurologically mediated conditions, offering a revolutionary approach to enhancing treatment efficacy while potentially reducing medication dependence. By incorporating distinct sensory cues, this innovation harnesses the power of conditioned response to optimize therapeutic outcomes across multiple treatment categories.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #f3f9fd;">
+    <div class="container">
+        <h2>Applications</h2>
+        <div class="grid">
+            <div class="feature-box">
+                <h3>Mental Health</h3>
+                <ul>
+                    <li>Depression medications</li>
+                    <li>Anxiety treatments</li>
+                    <li>PTSD therapies</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>Sleep Disorders</h3>
+                <ul>
+                    <li>Insomnia medications</li>
+                    <li>Sleep cycle regulators</li>
+                    <li>Circadian rhythm treatments</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>Pain</h3>
+                <ul>
+                    <li>Chronic pain management</li>
+                    <li>Neuropathic pain treatments</li>
+                    <li>Migraine medications</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #e7eff6;">
+    <div class="container">
+        <h2>Key Benefits</h2>
+        <div class="grid">
+            <div class="feature-box">
+                <h3>Enhanced Efficacy</h3>
+                <p>Potential to improve treatment outcomes through conditioned response mechanisms.</p>
+                <ul>
+                    <li>Strengthened therapeutic effects</li>
+                    <li>Improved patient response rates</li>
+                    <li>Enhanced treatment consistency</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>Reduced Dependency</h3>
+                <p>Opportunity to lower required medication doses while maintaining effectiveness.</p>
+                <ul>
+                    <li>Minimized side effects</li>
+                    <li>Better long-term outcomes</li>
+                    <li>Improved safety profile</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>Market Advantage</h3>
+                <p>Significant opportunities for pharmaceutical companies.</p>
+                <ul>
+                    <li>Patent extension potential</li>
+                    <li>Product differentiation</li>
+                    <li>Expanded market reach</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #f3f9fd; text-align: center;">
+    <div class="container">
+        <button onclick="downloadPDF()">Download Innovation Overview</button>
+    </div>
+</section>
+
+<script>
+    function downloadPDF() {
+        const pdfUrl = 'https://github.com/devgandhi7/Images-/raw/main/White%20Page%20for%20Placebo-Cued%20Medicine%20Technology.pdf';
+        window.open(pdfUrl, '_blank');
+    }
+</script>
+
+<!-- Added Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://raw.githubusercontent.com/devgandhi7/Images-/main/image-removebg-preview.png" alt="Callix Research Logo">
+            </div>
+            <div class="footer-nav">
+                <div class="footer-links">
+                    <a href="https://www.callixresearch.com/about-callix-research" class="footer-link">About</a>
+                    <a href="https://www.callixresearch.com/innovations" class="footer-link">Projects</a>
+                    <a href="https://www.callixresearch.com/u-s-patents" class="footer-link">U.S. Patents</a>
+                </div>
+                <a href="https://www.callixresearch.com/contact-us" class="footer-link contact-link">Contact Us</a>
+            </div>
+            <div class="footer-contact">
+                <p><a href="mailto:info@callixresearch.com">info@callixresearch.com</a></p>
+                <p>(919) 914-0210</p>
+                <p>
+                    <span style="display: block;">401-A W. Weaver Street</span>
+                    <span>Carrboro, NC 27510</span>
+                </p>
+            </div>
+        </div>
+    </div>
+<div class="footer-bottom">
+        <p style="color: #bbc6cd; font-size: 14px;">© 2025 Callix Research, LLC</p> <p style="color: #bbc6cd; font-size: 14px;">All Rights Reserved.</p>
+      </div>
+</footer>
+
+</body>
+</html>
