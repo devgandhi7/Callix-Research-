@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callix Research - Contact</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f3f9fd;
+      color: #424b80;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: linear-gradient(to bottom, #e7eff6, #ffffff);
+      color: #424b80;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .product-card, .feature-box {
+      border: 1px solid #b0c9dc;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .device-heading {
+      margin: 0;
+      padding: 0;
+      text-decoration: underline;
+    }
+    .device-heading a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      font-family: Arial, sans-serif;
+      color: #424b80;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #424b80;
+    }
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .grid-three, .grid-two {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .grid-three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-four {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #001636;
+      color: #FFFFFF;
+      padding: 40px 20px 80px;
+      font-family: Arial, sans-serif;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 30px;
+      min-height: 120px;
+    }
+    .footer-logo {
+      flex: 1;
+      min-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-logo img {
+      max-height: 120px;
+      width: auto;
+    }
+    .footer-nav {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 30px;
+      margin-top: 0;
+    }
+    .footer-link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 16px;
+    }
+/* New styling for the footer bottom with extra space */
+    .footer-bottom {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #bbc6cd;
+      font-size: 12px;
+      margin-top: 60px; /* Increased space (approx. 2 blank lines) */
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    .contact-link {
+      color: #FFFFFF;
+      margin-top: auto;
+    }
+    .footer-contact {
+      flex: 1;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .footer-contact p {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    .footer-contact a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .grid-three, .grid-two, .grid-four {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      .section {
+        padding: 2rem 1rem;
+      }
+      .hero {
+        padding: 2.5rem 1rem;
+      }
+      /* Footer Mobile Styles */
+      footer {
+        padding: 30px 15px;
+      }
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        min-height: auto;
+      }
+      .footer-logo, .footer-nav, .footer-contact {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+      }
+      .footer-nav {
+        height: auto;
+        gap: 20px;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .footer-logo img {
+        max-height: 100px;
+      }
+      .footer-contact {
+        align-items: center;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      footer {
+        padding: 20px 10px;
+      }
+      .footer-logo img {
+        max-height: 80px;
+      }
+      .footer-link {
+        font-size: 14px;
+      }
+      .footer-contact p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Other sections of the page can be added here -->
+
+  <!-- Contact Form Section -->
+  <div class="container" style="max-width: 600px; margin: auto; font-family: Arial, sans-serif; color: #424b80;">
+    <h1 style="text-align: center; color: #424b80; font-size: 2.4rem; margin-bottom: 1.5rem;">Contact Callix Research</h1>
+    <form target="_blank" action="https://formsubmit.co/info@callixresearch.com" method="POST" style="padding: 20px; background-color: #fffbf5; border-radius: 1rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="name" style="font-weight: bold; margin-bottom: 5px; display: block; font-size: 1.2rem; color: #424b80;">Name *</label>
+        <input type="text" id="name" name="name" placeholder="" required style="width: 100%; padding: 12px; border: 1px solid #b0c9dc; border-radius: 0.5rem; font-size: 1rem;">
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="company" style="font-weight: bold; margin-bottom: 5px; display: block; font-size: 1.2rem; color: #424b80;">Company</label>
+        <input type="text" id="company" name="company" placeholder="" style="width: 100%; padding: 12px; border: 1px solid #b0c9dc; border-radius: 0.5rem; font-size: 1rem;">
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="title" style="font-weight: bold; margin-bottom: 5px; display: block; font-size: 1.2rem; color: #424b80;">Title</label>
+        <input type="text" id="title" name="title" placeholder="" style="width: 100%; padding: 12px; border: 1px solid #b0c9dc; border-radius: 0.5rem; font-size: 1rem;">
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="email" style="font-weight: bold; margin-bottom: 5px; display: block; font-size: 1.2rem; color: #424b80;">Email *</label>
+        <input type="email" id="email" name="email" placeholder="" required style="width: 100%; padding: 12px; border: 1px solid #b0c9dc; border-radius: 0.5rem; font-size: 1rem;">
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="phone" style="font-weight: bold; margin-bottom: 5px; display: block; font-size: 1.2rem; color: #424b80;">Phone</label>
+        <input type="text" id="phone" name="phone" placeholder="" style="width: 100%; padding: 12px; border: 1px solid #b0c9dc; border-radius: 0.5rem; font-size: 1rem;">
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="interest" style="font-weight: bold; margin-bottom: 5px; display: block; font-size: 1.2rem; color: #424b80;">Area of Interest</label>
+        <select id="interest" name="interest" style="width: 100%; padding: 12px; border: 1px solid #b0c9dc; border-radius: 0.5rem; font-size: 1rem;">
+          <option value="general">General Inquiry</option>
+          <option value="Work">Work With Us</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="message" style="font-weight: bold; margin-bottom: 5px; display: block; font-size: 1.2rem; color: #424b80;">Message *</label>
+        <textarea id="message" name="message" placeholder="" rows="5" required style="width: 100%; padding: 12px; border: 1px solid #b0c9dc; border-radius: 0.5rem; font-size: 1rem;"></textarea>
+      </div>
+      <button type="submit" style="background-color: #424b80; color: white; padding: 12px; font-size: 1.2rem; border: none; border-radius: 0.5rem; cursor: pointer; width: 100%; transition: background-color 0.3s ease;">
+        Send Message
+      </button>
+    </form>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Images-/main/image-removebg-preview.png" alt="Callix Research Logo">
+        </div>
+        <div class="footer-nav">
+          <div class="footer-links">
+            <a href="https://www.callixresearch.com/about-callix-research" class="footer-link">About</a>
+            <a href="https://www.callixresearch.com/innovations" class="footer-link">Projects</a>
+            <a href="https://www.callixresearch.com/u-s-patents" class="footer-link">U.S. Patents</a>
+          </div>
+          <a href="https://www.callixresearch.com/contact-us" class="footer-link contact-link">Contact Us</a>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:info@callixresearch.com">info@callixresearch.com</a></p>
+          <p>(919) 914-0210</p>
+          <p>
+            <span style="display: block;">401-A W. Weaver Street</span>
+            <span>Carrboro, NC 27510</span>
+          </p>
+        </div>
+      </div>
+    </div>
+<div class="footer-bottom">
+        <p style="color: #bbc6cd; font-size: 14px;">© 2025 Callix Research, LLC</p> <p style="color: #bbc6cd; font-size: 14px;">All Rights Reserved.</p>
+      </div>
+  </footer>
+</body>
+</html>
