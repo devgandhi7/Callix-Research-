@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neuro-Olfactory Technology - Extended Applications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f3f9fd; /* Light background to match the theme */
+            color: #333; /* Main text color */
+        }
+        .section {
+            padding: 4rem 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #e7eff6, #ffffff); /* Subtle gradient for hero section */
+            color: #333;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        /* Change the subheading text (inside the hero section) to match the heading colour */
+        .hero p {
+            color: #5885A7;
+        }
+        .feature-box {
+            border: 1px solid #b0c9dc; /* Matching theme border */
+            border-radius: 1rem; /* Rounded corners for the boxes */
+            padding: 1.5rem;
+            background: #fffbf5; /* White background for contrast */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        h1, h2, h3, h4 {
+            font-family: Arial, sans-serif;
+            color: #424b80; /* Theme heading color */
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555; /* Dark gray for text readability */
+        }
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.8rem;
+            text-indent: -1.2rem; /* Hanging indent for bullets */
+            padding-left: 1.2rem; /* Align bullets with text */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Horizontal layout for boxes */
+            gap: 2rem;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #424b80;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        button:hover {
+            background-color: #476d8c; /* Darker shade for hover effect */
+        }
+        img {
+            max-width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styles */
+/* New styling for the footer bottom with extra space */
+    .footer-bottom {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #bbc6cd;
+      font-size: 12px;
+      margin-top: 60px; /* Increased space (approx. 2 blank lines) */
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+        footer {
+            background-color: #001636;
+            color: #FFFFFF;
+            padding: 40px 20px 80px;
+            font-family: Arial, sans-serif;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 30px;
+            min-height: 120px;
+        }
+        .footer-logo {
+            flex: 1;
+            min-width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-logo img {
+            max-height: 120px;
+            width: auto;
+        }
+        .footer-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            margin-top: 0;
+        }
+        .footer-link {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .contact-link {
+            color: #FFFFFF;
+            margin-top: auto;
+        }
+        .footer-contact {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .footer-contact p {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        .footer-contact a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                min-height: auto;
+            }
+            .footer-logo, .footer-nav, .footer-contact {
+                flex: none;
+                width: 100%;
+                text-align: center;
+                height: auto;
+            }
+            .footer-nav {
+                height: auto;
+                gap: 20px;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .footer-logo img {
+                max-height: 100px;
+            }
+            .footer-contact {
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            footer {
+                padding: 20px 10px;
+            }
+            .footer-logo img {
+                max-height: 80px;
+            }
+            .footer-link {
+                font-size: 14px;
+            }
+            .footer-contact p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Updated Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Neuro-Olfactory Technology: Treating Odor-Triggered Illnesses</h1>
+        
+        <img src="https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/IMG_3661.jpg" alt="Neuro-Olfactory Technology">
+        <br><br>
+        <p>Cutting-edge technology to prevent migraines and nausea triggered by scents</p>
+    </div>
+</section>
+
+<section class="section" style="background-color: #e7eff6;">
+    <div class="container">
+        <h2>Innovation Overview</h2>
+        <div class="feature-box">
+            <p>Our patented Neuro-Olfactory Technology represents a breakthrough in treating conditions triggered by olfactory stimuli. This innovative nasal spray forms a non-toxic barrier within nasal passages, effectively preventing odorous compounds from triggering adverse reactions while maintaining natural breathing patterns.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #f3f9fd;">
+    <div class="container">
+        <h2>Primary Applications</h2>
+        <div class="grid">
+            <div class="feature-box">
+                <h3>Migraine Prevention</h3>
+                <ul>
+                    <li>Blocks odor-triggered headaches</li>
+                    <li>Preventive intervention</li>
+                    <li>Rapid onset protection</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>Nausea Management</h3>
+                <ul>
+                    <li>Pregnancy-related nausea</li>
+                    <li>Environmental Sensitivity</li>
+                    <li>Chemotherapy-induced nausea</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>Appetite Control</h3>
+                <ul>
+                    <li>Weight management support</li>
+                    <li>Craving reduction</li>
+                    <li>Eating behavior modification</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #e7eff6;">
+    <div class="container">
+        <h2>Technical Advantages</h2>
+        <div class="grid">
+            <div class="feature-box">
+                <h3>Natural Formulation</h3>
+                <p>Preservative-free composition using GRAS ingredients.</p>
+                <ul>
+                    <li>Non-toxic barrier formation</li>
+                    <li>Biocompatible materials</li>
+                    <li>Environmental stability</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>Targeted Action</h3>
+                <p>Precise intervention at the olfactory interface.</p>
+                <ul>
+                    <li>Selective odor blocking</li>
+                    <li>Maintained breathing function</li>
+                    <li>Rapid onset of action</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h3>User Experience</h3>
+                <p>Designed for optimal patient compliance.</p>
+                <ul>
+                    <li>Easy application method</li>
+                    <li>Comfortable daily use</li>
+                    <li>Consistent effectiveness</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #f3f9fd;">
+    <div class="container">
+        <h2>Market Potential</h2>
+        <div class="grid">
+            <div class="feature-box">
+                <h4>Regulatory Pathways</h4>
+                <ul>
+                    <li>OTC potential</li>
+                    <li>Prescription applications</li>
+                    <li>Medical device classification</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h4>Intellectual Property</h4>
+                <ul>
+                    <li>U.S. Patent No. 9,629,868</li>
+                    <li>International protection</li>
+                    <li>Robust patent portfolio</li>
+                </ul>
+            </div>
+            <div class="feature-box">
+                <h4>Market Segments</h4>
+                <ul>
+                    <li>Healthcare providers</li>
+                    <li>Consumer health</li>
+                    <li>Specialty markets</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-box" style="margin-top: 2rem;">
+            <h3>Development Status</h3>
+            <p><strong>Patent Status:</strong> U.S. Patent No. 9,629,868</p>
+            <p><strong>Development Stage:</strong> Ready for commercialization partnerships</p>
+            <p><strong>Target Markets:</strong> Multiple healthcare segments with diverse applications</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="text-align: center;">
+    <div class="container">
+        <button onclick="downloadPDF()">Download Innovation Overview</button>
+    </div>
+</section>
+
+<script>
+    function downloadPDF() {
+        const pdfUrl = 'https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/White%20Page%20for%20Neuro-Olfactory%20Technology%20-%20Prevention%20of%20Odor-Triggered%20Conditions.pdf';
+        window.open(pdfUrl, '_blank');
+    }
+</script>
+
+<!-- Updated Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://raw.githubusercontent.com/devgandhi7/Images-/main/image-removebg-preview.png" alt="Callix Research Logo">
+            </div>
+            <div class="footer-nav">
+                <div class="footer-links">
+                    <a href="https://www.callixresearch.com/about-callix-research" class="footer-link">About</a>
+                    <a href="https://www.callixresearch.com/innovations" class="footer-link">Projects</a>
+                    <a href="https://www.callixresearch.com/u-s-patents" class="footer-link">U.S. Patents</a>
+                </div>
+                <a href="https://www.callixresearch.com/contact-us" class="footer-link contact-link">Contact Us</a>
+            </div>
+            <div class="footer-contact">
+                <p><a href="mailto:info@callixresearch.com">info@callixresearch.com</a></p>
+                <p>(919) 914-0210</p>
+                <p>
+                    <span style="display: block;">401-A W. Weaver Street</span>
+                    <span>Carrboro, NC 27510</span>
+                </p>
+            </div>
+        </div>
+    </div>
+<div class="footer-bottom">
+        <p style="color: #bbc6cd; font-size: 14px;">© 2025 Callix Research, LLC</p> <p style="color: #bbc6cd; font-size: 14px;">All Rights Reserved.</p>
+      </div>
+</footer>
+
+</body>
+</html>
