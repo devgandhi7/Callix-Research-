@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Callix Research</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f3f9fd; /* Light background for the website */
+            color: #333; /* Main text color */
+        }
+        .section {
+            padding: 4rem 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #e7eff6, #ffffff); /* Subtle gradient for hero section */
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .bio-card, .achievement-box {
+            border-radius: 1rem; /* Rounded corners for boxes */
+            background: #fffbf5; /* Updated box color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .bio-card {
+            border: 1px solid #b0c9dc;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .achievement-box {
+            border-radius: 1rem; /* Rounded corners */
+            background: #fffbf5; /* Updated box color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            padding: 1.5rem;
+            border: 1px solid #b0c9dc;
+            text-align: center; /* Center the content */
+        }
+        h1, h2, h3 {
+            font-family: Arial, sans-serif;
+            color: #424b80; /* Theme heading color */
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem; /* Default paragraph font size */
+            color: #555; /* Dark gray for text readability */
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+            gap: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible layout */
+            gap: 2rem;
+        }
+        /* Footer Styles */
+/* New styling for the footer bottom with extra space */
+    .footer-bottom {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #bbc6cd;
+      font-size: 12px;
+      margin-top: 60px; /* Increased space (approx. 2 blank lines) */
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+        footer {
+          background-color: #001636;
+          color: #FFFFFF;
+          padding: 40px 20px 80px;
+          font-family: Arial, sans-serif;
+        }
+        .footer-container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          gap: 30px;
+          min-height: 120px;
+        }
+        .footer-logo {
+          flex: 1;
+          min-width: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .footer-logo img {
+          max-height: 120px;
+          width: auto;
+        }
+        .footer-nav {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          height: 120px;
+        }
+        .footer-links {
+          display: flex;
+          gap: 30px;
+          margin-top: 0;
+        }
+        .footer-link {
+          color: #FFFFFF;
+          text-decoration: none;
+          font-size: 16px;
+        }
+        .contact-link {
+          color: #FFFFFF;
+          margin-top: auto;
+        }
+        .footer-contact {
+          flex: 1;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+        .footer-contact p {
+          margin: 0 0 10px 0;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+        .footer-contact a {
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+        @media (max-width: 768px) {
+          .grid-three, .grid-two, .grid-four {
+            grid-template-columns: 1fr;
+          }
+          h1 {
+            font-size: 2rem;
+          }
+          h2 {
+            font-size: 1.8rem;
+          }
+          h3 {
+            font-size: 1.4rem;
+          }
+          p {
+            font-size: 0.95rem;
+          }
+          .section {
+            padding: 2rem 1rem;
+          }
+          .hero {
+            padding: 2.5rem 1rem;
+          }
+          /* Footer Mobile Styles */
+          footer {
+            padding: 30px 15px;
+          }
+          .footer-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            min-height: auto;
+          }
+          .footer-logo, .footer-nav, .footer-contact {
+            flex: none;
+            width: 100%;
+            text-align: center;
+            height: auto;
+          }
+          .footer-nav {
+            height: auto;
+            gap: 20px;
+          }
+          .footer-links {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .footer-logo img {
+            max-height: 100px;
+          }
+          .footer-contact {
+            align-items: center;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          footer {
+            padding: 20px 10px;
+          }
+          .footer-logo img {
+            max-height: 80px;
+          }
+          .footer-link {
+            font-size: 14px;
+          }
+          .footer-contact p {
+            font-size: 14px;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container"; style="margin: 50px 50px";>
+        <h1 style="text-align:center;">About Callix Research</h1>
+           
+        <p style="font-size: 1.5rem; color: #acb3bd; style="text-align:center"><b>Pioneering sustainable medical technologies to revolutionize global healthcare through innovations in infection prevention, pain management, and neurological treatment.</b></p>
+           
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Our Achievements</h2>
+        <div class="stats-grid">
+            <div class="achievement-box">
+                <h3>100+</h3>
+                <p>U.S. Patents</p>
+            </div>
+            <div class="achievement-box">
+                <h3>300+</h3>
+                <p>International Patents</p>
+            </div>
+            <div class="achievement-box">
+                <h3>$1.5B+</h3>
+                <p>Revenue Generated</p>
+            </div>
+            <div class="achievement-box">
+                <h3>3</h3>
+                <p>R&D 100 Awards</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Leadership Team</h2>
+        <div class="bio-card">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                <div>
+                    <h3>Josh Lev</h3>
+                    <h3>CEO & Co-Founder</h3>
+                    <p>
+                        As co-founder and CEO of Callix Research, Josh Lev brings a unique interdisciplinary perspective to medical innovation. His diverse background spans medicine, design, and ecology, enabling him to develop groundbreaking technologies across multiple fields.
+                    </p>
+                    <p>
+                        Josh's vision for Callix Research centers on creating affordable, sustainable healthcare solutions that make a meaningful impact on patient outcomes. His innovative approach has enabled him to develop technologies across fields like animal behavior studies, pharmaceutical technology, and medical diagnostics.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bio-card">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                <div>
+                    <h3>Robert A. Levine</h3>
+                    <h3>Medical Advisor & Co-Founder</h3>
+                    <p>
+                        Dr. Robert A. Levine serves as co-founder and senior inventor at Callix Research, bringing extensive expertise as a Clinical Professor of Laboratory Medicine at Yale and a practicing internist and endocrinologist.
+                    </p>
+                    <p>
+                        With over 100 patents in diagnostics for human and veterinary medicine, Dr. Levine has pioneered breakthrough tests in hematologic and cancer diagnostics. His commitment to advancing medical technology continues to drive Callix Research's focus on developing high-impact healthcare innovations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #f3f9fd;">
+    <div class="container">
+        <h2>Our Impact</h2>
+        <div class="grid">
+            <div class="achievement-box lower-box">
+                <h3>Innovation Excellence</h3>
+                <p>Recognition with the R&D 100 Award each decade demonstrates our consistent commitment to breakthrough medical technologies.</p>
+            </div>
+            <div class="achievement-box lower-box">
+                <h3>Global Reach</h3>
+                <p>Our technologies have been licensed to leading healthcare companies worldwide, improving patient outcomes across continents.</p>
+            </div>
+            <div class="achievement-box lower-box">
+                <h3>Sustainable Focus</h3>
+                <p>Every innovation prioritizes ecological responsibility alongside medical effectiveness, setting new standards in sustainable healthcare.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Updated Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="https://raw.githubusercontent.com/devgandhi7/Images-/main/image-removebg-preview.png" alt="Callix Research Logo">
+      </div>
+      <div class="footer-nav">
+        <div class="footer-links">
+          <a href="https://www.callixresearch.com/about-callix-research" class="footer-link">About</a>
+          <a href="https://www.callixresearch.com/innovations" class="footer-link">Projects</a>
+          <a href="https://www.callixresearch.com/u-s-patents" class="footer-link">U.S. Patents</a>
+        </div>
+        <a href="https://www.callixresearch.com/contact-us" class="footer-link contact-link">Contact Us</a>
+      </div>
+      <div class="footer-contact">
+        <p><a href="mailto:info@callixresearch.com">info@callixresearch.com</a></p>
+        <p>(919) 914-0210</p>
+        <p>
+          <span style="display: block;">401-A W. Weaver Street</span>
+          <span>Carrboro, NC 27510</span>
+        </p>
+      </div>
+    </div>
+  </div>
+<div class="footer-bottom">
+        <p style="color: #bbc6cd; font-size: 14px;">© 2025 Callix Research, LLC</p> <p style="color: #bbc6cd; font-size: 14px;">All Rights Reserved.</p>
+      </div>
+</footer>
+
+</body>
+</html>
