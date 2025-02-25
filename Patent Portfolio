@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patent Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #424b80;
+      margin: 0;
+    }
+    
+    header p {
+      font-size: 1.2em;
+      color: #666;
+      margin: 10px 0 0;
+    }
+    
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    section {
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      color: #0056b3;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f9f9f9;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px;
+      transition: box-shadow 0.3s ease;
+    }
+    
+    li:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* --- Updated Footer Styles --- */
+    footer {
+      background-color: #001636;
+      color: #FFFFFF;
+      padding: 40px 20px 80px;
+      font-family: Arial, sans-serif;
+    }
+    
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .footer-content {
+      display: flex;
+      font-weight: normal;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 30px;
+      min-height: 120px;
+    }
+    
+    .footer-logo {
+      flex: 1;
+      min-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .footer-logo img {
+      max-height: 120px;
+      width: auto;
+    }
+    
+    .footer-nav {
+      flex: 1;
+      display: flex;
+      font-weight: normal;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+    }
+    
+    .footer-links {
+      display: flex;
+      gap: 30px;
+      font-weight: normal;
+      margin-top: 0;
+    }
+    
+    .footer-link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    
+    .contact-link {
+      color: #FFFFFF;
+      font-weight: normal;
+      margin-top: auto;
+    }
+    
+    .footer-contact {
+      flex: 1;
+      text-align: left;
+      font-weight: normal;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    
+    .footer-contact p {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      font-weight: normal;
+      color: #FFFFFF;
+    }
+    /* New styling for the footer bottom with extra space */
+    .footer-bottom p {
+      text-align: center;
+      font-weight: normal;
+      font-family: Arial, sans-serif;
+      color: #bbc6cd;
+      font-size: 12px;
+      margin-top: 60px; /* Increased space (approx. 2 blank lines) */
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    .footer-contact a {
+      color: #FFFFFF;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        font-weight: normal;
+        min-height: auto;
+      }
+      
+      .footer-logo, .footer-nav, .footer-contact {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+      }
+      
+      .footer-nav {
+        height: auto;
+        gap: 20px;
+      }
+      
+      .footer-links {
+        flex-direction: column;
+        font-weight: normal;
+        gap: 10px;
+      }
+      
+      .footer-logo img {
+        max-height: 100px;
+      }
+      
+      .footer-contact {
+        align-items: center;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      footer {
+        padding: 20px 10px;
+      }
+      
+      .footer-logo img {
+        max-height: 80px;
+      }
+      
+      .footer-link {
+       font-weight: normal; 
+font-size: 14px;
+      }
+      
+      .footer-contact p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Patent Portfolio</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Current U.S. Patents</h2>
+      <ul>
+        <li><a href="https://patents.google.com/patent/US11123429B2/en" target="_blank">11,123,429 - System for adding sensory conditioning cues in a pharmacotherapeutic regimen (neurologically mediated)</a></li>
+        <li><a href="https://patents.google.com/patent/US10585084B2/en" target="_blank">10,585,084 - Method and apparatus for performing hematologic analysis using an array-imaging system for imaging and analysis of a centrifuged analysis tube</a></li>
+        <li><a href="https://patents.google.com/patent/US10556011B2/en" target="_blank">10,556,011 - Method and system for adding sensory conditioning cues in a pharmacotherapeutic regimen (opioid)</a></li>
+        <li><a href="https://patents.google.com/patent/US10350233B2/en" target="_blank">10,350,233 - Method of treating and preventing neuro-olfactory triggered or aggravated illnesses or related conditions</a></li>
+        <li><a href="https://patents.google.com/patent/US8774487B2/en" target="_blank">8,774,487 - Method and apparatus for remotely performing hematologic analysis utilizing a transmitted image of a centrifuged analysis tube</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Past U.S. Patents Awarded</h2>
+      <ul>
+        <li><a href="https://patents.google.com/patent/US8319954B2/en" target="_blank">8,319,954 - Virtual separation of bound and free label in a ligand assay for performing immunoassays of biological fluids, including whole blood</a></li>
+        <li><a href="https://patents.google.com/patent/US8310659B2/en" target="_blank">8,310,659 - Method and apparatus for detecting and counting platelets individually and in aggregate clumps</a></li>
+        <li><a href="https://patents.google.com/patent/US8310658B2/en" target="_blank">8,310,658 - Method and apparatus for identifying reticulocytes within a blood sample</a></li> 
+        <li><a href="https://patents.google.com/patent/US8284384B2/en" target="_blank">8,284,384 - Method and apparatus for analyzing individual cells or particulates using fluorescent quenching and/or bleaching</a></li>
+        <li><a href="https://patents.google.com/patent/US8269954B2/en" target="_blank">8,269,954 - Method and apparatus for analyzing individual cells or particulates using fluorescent quenching and/or bleaching</a></li>
+        <li><a href="https://patents.google.com/patent/US8221985B2/en" target="_blank">8,221,985 - Self-calibrating gradient dilution in a constituent assay and gradient dilution apparatus performed in a thin...</a></li>
+        <li><a href="https://patents.google.com/patent/US8133738B2/en?oq=8%2c133%2c738" target="_blank">8,133,738 - Method and apparatus for determining the hematocrit of a blood sample utilizing the intrinsic pigmentation of hemoglobin contained within the red blood cells</a></li>
+        <li><a href="https://patents.google.com/patent/US8081303B2/en?oq=8%2c081%2c303+" target="_blank">8,081,303 - Method and apparatus for analyzing individual cells or particulates using fluorescent quenching and/or bleaching</a></li>
+        <li><a href="https://patents.google.com/patent/US8077296B2/en?oq=8%2c077%2c296" target="_blank">8,077,296 - Method and apparatus for detecting and counting platelets individually and in aggregate clumps</a></li>
+        <li><a href="https://patents.google.com/patent/US7995194B2/en?oq=7%2c995%2c194" target="_blank">7,995,194 - Virtual separation of bound and free label in a ligand assay for performing immunoassays of biological fluids, including whole blood</a></li>
+        <li><a href="https://patents.google.com/patent/US7951599B2/en?oq=7%2c951%2c599+" target="_blank">7,951,599 - Method and apparatus for determining the hematocrit of a blood sample utilizing the intrinsic pigmentation of hemoglobin contained within the red blood cells</a></li>
+        <li><a href="https://patents.google.com/patent/US7929122B2/en?oq=7%2c929%2c122+" target="_blank">7,929,122 - Method and apparatus for determining red blood cell indices of a blood sample utilizing the intrinsic pigmentation of hemoglobin contained within the red blood cells</a></li>
+        <li><a href="https://patents.google.com/patent/US7903241B2/en?oq=7%2c903%2c241" target="_blank">7,903,241 - Method and apparatus for determining red blood cell indices of a blood sample utilizing the intrinsic pigmentation of hemoglobin contained within the red blood cells</a></li>
+        <li><a href="https://patents.google.com/patent/US7129056B2/en?oq=7%2c129%2c056" target="_blank">7,129,056 - Method for the detection, identification, enumeration and confirmation of virally infected cells and other epitopically defined cells in whole blood</a></li>
+        <li><a href="https://patents.google.com/patent/US6911315B2/en?oq=US+6911315+B2" target="_blank">6,911,315 - Method for the detection, identification, enumeration and confirmation of virally infected cells and other epitopically defined cells in whole blood</a></li>
+        <li><a href="https://patents.google.com/patent/US6762017B2/en?oq=US6%2c762%2c017+B2" target="_blank">6,762,017 - Control for complete blood count analysis system</a></li>
+        <li><a href="https://patents.google.com/patent/US6748337B2/en?oq=6%2c748%2c337+" target="_blank">6,748,337 - Method and apparatus for providing quality control in an instrument for medical analysis</a></li>
+        <li><a href="https://patents.google.com/patent/US6670197B2/en?oq=US6%2c670%2c197B2" target="_blank">6,670,197 - Method for assaying whole blood for the presence or absence of circulating cancer or other target cell fragments</a></li>
+        <li><a href="https://patents.google.com/patent/US6472166B1/en?oq=US6%2c472%2c166" target="_blank">6,472,166 - Method for determining the effects of a growth-altering agent on a microbial colony</a></li>
+        <li><a href="https://patents.google.com/patent/US6448088B1/en?oq=US6%2c448%2c088+" target="_blank">6,448,088 - Method and apparatus for detecting insoluble constituents in a quiescent urine sample</a></li>
+        <li><a href="https://patents.google.com/patent/US6444436B1/en?oq=US6%2c444%2c436+" target="_blank">6,444,436 - Evacuated container assembly for analysis of a blood sample for the presence or absence of rare events</a></li>
+        <li><a href="https://patents.google.com/patent/US6365104B1/en?oq=US6%2c365%2c104" target="_blank">6,365,104 - Assembly for analyzing blood samples</a></li>
+        <li><a href="https://patents.google.com/patent/US6350613B1/en?oq=US6%2c350%2c613+" target="_blank">6,350,613 - Determination of white blood cell differential and reticulocyte counts</a></li>
+        <li><a href="https://patents.google.com/patent/US6197523B1/en?oq=US6%2c197%2c523" target="_blank">6,197,523 - Method for the detection, identification, enumeration and confirmation of circulating cancer and/or hematologic progenitor cells in whole blood</a></li>
+        <li><a href="https://patents.google.com/patent/US6007990A/en?oq=US6%2c007%2c990+" target="_blank">6,007,990 - Detection and quantification of one or more nucleotide sequence target analytes in a sample using spatially localized target analyte replication</a></li>
+        <li><a href="https://patents.google.com/patent/US6004821A/en?oq=US6%2c004%2c821" target="_blank">6,004,821 - Method and apparatus for performing chemical, qualitative, quantitative, and semi-quantitative analyses of a urine sample</a></li>
+        <li><a href="https://patents.google.com/patent/US5834217A/en?oq=US5%2c834%2c217" target="_blank">5,834,217 - Assay of blood or other biologic samples for target analytes</a></li>
+        <li><a href="https://patents.google.com/patent/US5776710A/en?oq=US5%2c776%2c710" target="_blank">5,776,710 - Assay of blood or other biologic samples for target analytes</a></li>
+        <li><a href="https://patents.google.com/patent/US5759794A/en?oq=US5%2c759%2c794" target="_blank">5,759,794 - Assay of blood or other biologic samples for target analytes</a></li>
+        <li><a href="https://patents.google.com/patent/US5723285A/en?oq=US5%2c723%2c285" target="_blank">5,723,285 - Assembly for detecting blood-borne parasites and measuring blood sample parameters in a centrifuged sample of blood</a></li>
+        <li><a href="https://patents.google.com/patent/US5707876A/en?oq=US5%2c707%2c876" target="_blank">5,707,876 - Method and apparatus for harvesting constituent layers from a centrifuged material mixture</a></li>
+        <li><a href="https://patents.google.com/patent/US5705739A/en?oq=US5%2c705%2c739" target="_blank">5,705,739 - Detecting specific medical conditions from erythrocyte density distribution in a centrifuged anticoagulated whole blood sample</a></li>
+        <li><a href="https://patents.google.com/patent/US5635362A/en?oq=US5%2c635%2c362" target="_blank">5,635,362 - Assay of blood or other biologic samples for target analytes</a></li>
+        <li><a href="https://patents.google.com/patent/US5593848A/en?oq=US5%2c593%2c848" target="_blank">5,593,848 - Target component assay utilizing specific gravity-altering liposomes</a></li>
+        <li><a href="https://patents.google.com/patent/US5506145A/en?oq=US5%2c506%2c145" target="_blank">5,506,145 - Determination of an individual's inflammation index from whole blood fibrinogen and hematocrit or hemoglobin</a></li>
+        <li><a href="https://patents.google.com/patent/US5496704A/en?oq=US5%2c496%2c704" target="_blank">5,496,704 - Method for in vitro detection of formed elements in biological samples</a></li>
+        <li><a href="https://patents.google.com/patent/US5480778A/en?oq=US5%2c480%2c778" target="_blank">5,480,778 - Determination of lymphocyte reactivity to specific antigens in blood</a></li>
+        <li><a href="https://patents.google.com/patent/US5460979A/en?oq=US5%2c460%2c979" target="_blank">5,460,979 - Indirect fluorescent assay of blood samples</a></li>
+        <li><a href="https://patents.google.com/patent/US5460969A/en?oq=US5%2c460%2c969" target="_blank">5,460,969 - Method for differentiating the source of occult gastrointestinal bleeding</a></li>
+        <li><a href="https://patents.google.com/patent/US5403714A/en?oq=US5%2c403%2c714" target="_blank">5,403,714 - Method for in vitro detection of formed elements in biological samples</a></li>
+        <li><a href="https://patents.google.com/patent/US5393674A/en?oq=US5%2c393%2c674" target="_blank">5,393,674 - Constituent layer harvesting from a centrifuged sample in a tube</a></li>
+        <li><a href="https://patents.google.com/patent/US5360719A/en?oq=US5%2c360%2c719" target="_blank">5,360,719 - Determination of lymphocyte reactivity to specific</a></li>
+        <li><a href="https://patents.google.com/patent/US5342790A/en?oq=US5%2c342%2c790" target="_blank">5,342,790 - Apparatus for indirect fluorescent assay of blood samples</a></li>
+        <li><a href="https://patents.google.com/patent/US5331973A/en?oq=US5%2c331%2c973" target="_blank">5,331,973 - Method for obtaining stool samples for gastrointestinal cancer testing</a></li>
+        <li><a href="https://patents.google.com/patent/US5321975A/en?oq=US5%2c321%2c975" target="_blank">5,321,975 - Differential erythrocyte counts</a></li>
+        <li><a href="https://patents.google.com/patent/US5252460A/en?oq=US5%2c252%2c460" target="_blank">5,252,460 - In vitro detection of ova, parasites, and other formed elements in stool</a></li>
+        <li><a href="https://patents.google.com/patent/US5251474A/en?oq=US5%2c251%2c474" target="_blank">5,251,474 - Centrifuged material layer measurement in an evacuated tube</a></li>
+        <li><a href="https://patents.google.com/patent/US5171528A/en?oq=US5%2c171%2c528" target="_blank">5,171,528 - Device for differentiating the source of occult gastrointestinal bleeding</a></li>
+        <li><a href="https://patents.google.com/patent/US5137832A/en?oq=US5%2c137%2c832" target="_blank">5,137,832 - Quantification of fibrinogen in whole blood samples contained in a tube using a float to separate materials</a></li>
+        <li><a href="https://patents.google.com/patent/US5132087A/en?oq=US5%2c132%2c087" target="_blank">5,132,087 - Apparatus for measuring blood constituent counts</a></li>
+        <li><a href="https://patents.google.com/patent/US5086784A/en?oq=US5%2c086%2c784" target="_blank">5,086,784 - Centrifuged material layer measurements taken in an evacuated tube</a></li>
+        <li><a href="https://patents.google.com/patent/US5064766A/en?oq=US5%2c064%2c766" target="_blank">5,064,766 - Method for differentiating the source of occult gastrointestinal bleeding</a></li>
+        <li><a href="https://patents.google.com/patent/US5023785A/en?oq=US5%2c023%2c785" target="_blank">5,023,785 - Hematology - diagnosis apparatus employing expert system technology</a></li>
+        <li><a href="https://patents.google.com/patent/US4979635A/en?oq=US4%2c979%2c635" target="_blank">4,979,635 - Easy opening can with internal reclosure flap</a></li>
+        <li><a href="https://patents.google.com/patent/US4953975A/en?oq=US4%2c953%2c975" target="_blank">4,953,975 - Correction of material layer volume measurements</a></li>
+        <li><a href="https://patents.google.com/patent/US4952054A/en?oq=US4%2c952%2c054" target="_blank">4,952,054 - Correction of blood count tube readings</a></li>
+        <li><a href="https://patents.google.com/patent/US4940668A/en?oq=US4%2c940%2c668" target="_blank">4,940,668 - Method for increasing agglutination of groups of cells to produce improved cell layer interface in centrifuged blood sample</a></li>
+        <li><a href="https://patents.google.com/patent/US4875364A/en?oq=US4%2c875%2c364" target="_blank">4,875,364 - Method for measuring hemoglobin</a></li>
+        <li><a href="https://patents.google.com/patent/US4843869A/en?oq=US4%2c843%2c869" target="_blank">4,843,869 - Method for measuring hemoglobin</a></li>
+        <li><a href="https://patents.google.com/patent/US4823624A/en?oq=US4%2c823%2c624" target="_blank">4,823,624 - Material layer volume determination with correction band</a></li>
+        <li><a href="https://patents.google.com/patent/US4808379A/en?oq=US4%2c808%2c379" target="_blank">4,808,379 - Device for obtaining stool samples and detecting occult blood</a></li>
+        <li><a href="https://patents.google.com/patent/US4804518A/en?oq=US4%2c804%2c518" target="_blank">4,804,518 - Device for occult blood testing</a></li>
+        <li><a href="https://patents.google.com/patent/US4779976A/en?oq=US4%2c779%2c976" target="_blank">4,779,976 - Multiparameter hematology measurement for veterinarians</a></li>
+        <li><a href="https://patents.google.com/patent/US4774965A/en?oq=US4%2c774%2c965" target="_blank">4,774,965 - Material layer volume determination with correction band</a></li>
+        <li><a href="https://patents.google.com/patent/US4746238A/en?oq=US4%2c746%2c238" target="_blank">4,746,238 - Stick swab with augured head</a></li>
+        <li><a href="https://patents.google.com/patent/US4700715A/en?oq=US4%2c700%2c715" target="_blank">4,700,715 - Device for detecting nocturnal penile erections</a></li>
+        <li><a href="https://patents.google.com/patent/US4695553A/en" target="_blank">4,695,553 - Method for increasing agglutination of groups of cells to produce improved cell layer interface in centrifuged blood sample using antibodies</a></li>
+        <li><a href="https://patents.google.com/patent/US4594165A/en" target="_blank">4,594,165 - Method of enhancing separation of abnormally light red cells from granulocytes in a centrifuged blood sample</a></li>
+        <li><a href="https://patents.google.com/patent/US4567754A/en" target="_blank">4,567,754 - Measurement of small heavy constituent layer in stratified mixture</a></li>
+        <li><a href="https://patents.google.com/patent/US4559949A/en" target="_blank">4,559,949 - Stool sampling device</a></li>
+        <li><a href="https://patents.google.com/patent/US4420353A/en" target="_blank">4,420,353 - Method of making a stool sampling device</a></li>
+        <li><a href="https://patents.google.com/patent/US4367750A/en" target="_blank">4,367,750 - Device for obtaining stool samples</a></li>
+        <li><a href="https://patents.google.com/patent/US4273741A/en" target="_blank">4,273,741 - Device for obtaining stool samples</a></li>
+        <li><a href="https://patents.google.com/patent/US4259964A/en" target="_blank">4,259,964 - Device for obtaining stool samples</a></li>
+        <li><a href="https://patents.google.com/patent/US4209226A/en" target="_blank">4,209,226 - Optical viewing instrument including capillary tube and holder</a></li>
+        <li><a href="https://patents.google.com/patent/US4204015A/en" target="_blank">4,204,015 - Insulating window structure and method of forming the same</a></li>
+        <li><a href="https://patents.google.com/patent/USD254444S/en" target="_blank">D254,444 - Blood sampling needle</a></li>
+        <li><a href="https://patents.google.com/patent/US4190328A/en" target="_blank">4,190,328 - Process for detection of blood-borne parasites</a></li>
+        <li><a href="https://patents.google.com/patent/US4181609A/en" target="_blank">4,181,609 - Blood constituents testing method</a></li>
+        <li><a href="https://patents.google.com/patent/US4170995A/en" target="_blank">4,170,995 - Catheter clamp</a></li>
+        <li><a href="https://patents.google.com/patent/US4159896A/en" target="_blank">4,159,896 - Enhancement of separation of cell layers in centrifuged blood sample</a></li>
+        <li><a href="https://patents.google.com/patent/US4141654A/en" target="_blank">4,141,654 - Standard for calibrating and/or verifying instrument accuracy</a></li>
+        <li><a href="https://patents.google.com/patent/US4137755A/en" target="_blank">4,137,755 - Material layer volume determination</a></li>
+        <li><a href="https://patents.google.com/patent/US4091659A/en" target="_blank">4,091,659 - Apparatus for measuring white cell count</a></li>
+        <li><a href="https://patents.google.com/patent/US4082085A/en" target="_blank">4,082,085 - Blood constituent testing methods</a></li>
+        <li><a href="https://patents.google.com/patent/US4077396A/en" target="_blank">4,077,396 - Material layer volume determination</a></li>
+        <li><a href="https://patents.google.com/patent/US4027660A/en" target="_blank">4,027,660 - Material layer volume determination</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <!-- New Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Images-/main/image-removebg-preview.png" alt="Callix Research Logo">
+        </div>
+        <div class="footer-nav">
+          <div class="footer-links">
+            <a href="https://www.callixresearch.com/about-callix-research" class="footer-link">About</a>
+            <a href="https://www.callixresearch.com/innovations" class="footer-link">Projects</a>
+            <a href="https://www.callixresearch.com/u-s-patents" class="footer-link">U.S. Patents</a>
+          </div>
+          <a href="https://www.callixresearch.com/contact-us" class="footer-link contact-link">Contact Us</a>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:info@callixresearch.com">info@callixresearch.com</a></p>
+          <p>(919) 914-0210</p>
+          <p>
+            <span style="display: block;">401-A W. Weaver Street</span>
+            <span>Carrboro, NC 27510</span>
+          </p>
+        </div>
+      </div>
+    </div>
+<div class="footer-bottom">
+        <p style="color: #bbc6cd; font-size: 14px;">© 2025 Callix Research, LLC</p> <p style="color: #bbc6cd; font-size: 14px;">All Rights Reserved.</p>
+      </div>
+  </footer>
+</body>
+</html>
