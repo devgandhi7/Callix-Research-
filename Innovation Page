@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Innovations at Callix Research</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f3f9fd; /* Light background for consistency */
+      color: #333; /* Main text color */
+    }
+    .section {
+      padding: 4rem 2rem;
+    }
+    /* Heading styling to match theme */
+    h2 {
+      color: #424b80;
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      text-align: left;
+      padding: 0 2rem;
+    }
+    .menu {
+      list-style: disc; /* Use the default bullet points */
+      padding-left: 2rem; /* Indent list items so bullets are visible */
+      text-align: left;
+    }
+    /* Increase bullet size using the ::marker pseudo-element */
+    .menu li::marker {
+      font-size: 2.5rem; /* Adjust this value to make bullets bigger or smaller */
+      color: #5885A7;    /* Optional: sets bullet color to match the theme */
+    }
+    .menu li {
+      margin: 3.5rem 0; /* Space between items */
+    }
+    .menu a {
+      text-decoration: none; /* No underline by default */
+      font-size: 2rem; /* Larger font size for better readability */
+      color: #424b80; /* Theme link color */
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    .menu a:hover {
+      color: #446A8C; /* Slightly darker hover color */
+      text-decoration: underline; /* Underline on hover */
+    }
+    
+    /* Footer Styles */
+    footer {
+      background-color: #001636;
+      color: #FFFFFF;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 30px;
+      min-height: 120px;
+    }
+    .footer-logo {
+      flex: 1;
+      min-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-logo img {
+      max-height: 120px;
+      width: auto;
+    }
+    .footer-nav {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 30px;
+      margin-top: 0;
+    }
+    .footer-link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .contact-link {
+      color: #FFFFFF;
+      margin-top: auto;
+    }
+    .footer-contact {
+      flex: 1;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .footer-contact p {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    .footer-contact a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    /* New styling for the footer bottom with extra space */
+    .footer-bottom {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #bbc6cd;
+      font-size: 12px;
+      margin-top: 60px; /* Increased space (approx. 2 blank lines) */
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        min-height: auto;
+      }
+      .footer-logo, .footer-nav, .footer-contact {
+        width: 100%;
+        text-align: center;
+        height: auto;
+      }
+      .footer-nav {
+        gap: 20px;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .footer-logo img {
+        max-height: 100px;
+      }
+      .footer-contact {
+        align-items: center;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      footer {
+        padding: 20px 10px 80px;
+      }
+      .footer-logo img {
+        max-height: 80px;
+      }
+      .footer-link {
+        font-size: 14px;
+      }
+      .footer-contact p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <h2>Current Licensing Opportunities</h2>
+    <ul class="menu">
+      <li><a href="https://www.callixresearch.com/innovations/placebo-cued-medicine">Placebo-Cued Medicine for Neurological Conditions</a></li>
+      <li><a href="https://www.callixresearch.com/innovations/placebo-cued-opiod">Placebo-Cued Medicine for Pain Management</a></li>
+      <li><a href="https://www.callixresearch.com/innovations/transnasal-device-for-infection-prevention">Transnasal Device for Infection Prevention</a></li>
+      <li><a href="https://www.callixresearch.com/innovations/neuro-olfactory-triggered-illness-treatment">Neuro-Olfactory Device for Odor-Triggered Prevention</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Images-/main/image-removebg-preview.png" alt="Callix Research Logo">
+        </div>
+        <div class="footer-nav">
+          <div class="footer-links">
+            <a href="https://www.callixresearch.com/about-callix-research" class="footer-link">About</a>
+            <a href="https://www.callixresearch.com/innovations" class="footer-link">Projects</a>
+            <a href="https://www.callixresearch.com/u-s-patents" class="footer-link">U.S. Patents</a>
+          </div>
+          <a href="https://www.callixresearch.com/contact-us" class="footer-link contact-link">Contact Us</a>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:info@callixresearch.com">info@callixresearch.com</a></p>
+          <p>(919) 914-0210</p>
+          <p>
+            <span style="display: block;">401-A W. Weaver Street</span>
+            <span>Carrboro, NC 27510</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color: #bbc6cd; font-size: 14px;">© 2025 Callix Research, LLC</p> <p style="color: #bbc6cd; font-size: 14px;">All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
