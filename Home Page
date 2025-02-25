@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callix Research - Medical Innovation</title>
+  <meta name="description" content="Callix Research pioneers breakthrough medical treatments, including placebo-cued medicine and transnasal infection prevention. Learn more about our innovations today!">
+<meta name="keywords" content="Callix Research, medical innovations, placebo-cued medicine, infection prevention, neuro-olfactory technology, sustainable healthcare, transnasal devices, medical patents,  pain management, neurological treatment, sensory conditioning cue, neuro-olfactory, global health, Biotech and Healthcare Innovation, Pharmaceutical Technology, Healthcare Research & Development, medical invention"> 
+<meta name="author" content="Callix Research, Callix,  Dr. Robert A Lavine, Josh Lev"> 
+<meta name="robots" content="index, follow">
+  <style>
+    /* Ensure padding is included in width calculations */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f7f7ed;
+      color: #333;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .hero {
+      background: linear-gradient(to bottom, #e7eff6, #ffffff);
+      color: #333;
+      padding: 3rem 1.5rem;
+      text-align: left;
+    }
+    .hero .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    /* Left side (text + boxes) */
+    .hero-left {
+      flex: 1;
+    }
+    @media (min-width: 769px) {
+      .hero-left {
+         min-width: 300px;
+      }
+    }
+    .hero-content {
+      margin-bottom: 1rem;
+    }
+    /* Box container for the two hero boxes */
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 27px;
+    }
+    .responsive-box {
+      width: 100%;
+      /* Let content determine height on mobile */
+      height: auto;
+    }
+    /* On larger screens, align boxes with the hero image */
+    @media (min-width: 769px) {
+      .box-container {
+        height: 510px; /* roughly matching the hero image height */
+      }
+      .responsive-box {
+        height: calc(50% - 0.5rem);
+      }
+    }
+    /* Right side (hero image) */
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .hero-image img {
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .product-card, .feature-box {
+      border: 1px solid #b0c9dc;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      background: #fffbf5;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .device-heading {
+      margin: 0;
+      padding: 0;
+      text-decoration: underline;
+    }
+    .device-heading a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      font-family: Arial, sans-serif;
+      color: #424b80;
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      width: 100%;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a.patent-link {
+      text-decoration: underline;
+    }
+    .grid-three, .grid-two {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .grid-three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-four {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    footer {
+      background-color: #001636;
+      color: #FFFFFF;
+      padding: 40px 20px 80px;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 30px;
+      min-height: 120px;
+    }
+    .footer-logo {
+      flex: 1;
+      min-width: 150px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .footer-logo img {
+      max-height: 120px;
+      width: auto;
+    }
+    .footer-nav {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 30px;
+      margin-top: 0;
+    }
+    .footer-link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .contact-link {
+      color: #FFFFFF;
+      margin-top: auto;
+    }
+    .footer-contact {
+      flex: 1;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      transform: translateX(20px);
+    }
+    .footer-contact p {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    .footer-contact a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .hero .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-image img {
+        width: 100%;
+        height: auto;
+      }
+      .grid-three, .grid-two, .grid-four {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      .section {
+        padding: 2rem 1rem;
+      }
+      .hero {
+        padding: 2.5rem 1rem;
+      }
+      footer {
+        padding: 30px 15px;
+      }
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+      .footer-logo, .footer-nav, .footer-contact {
+        width: 100%;
+        text-align: center;
+        transform: none;
+      }
+      .footer-nav {
+        height: auto;
+        gap: 20px;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .footer-logo img {
+        max-height: 100px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      footer {
+        padding: 20px 10px;
+      }
+      .footer-logo img {
+        max-height: 80px;
+      }
+      .footer-link, .footer-contact p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION WITH VERTICALLY STACKED BOXES -->
+  <section class="hero">
+    <h1>Transforming Medicine, Empowering Health</h1>
+    <div class="container">
+      
+      <!-- Left side: hero text + two stacked boxes -->
+      <div class="hero-left">
+        <div class="hero-content">
+          <p></p>
+          <p></p>
+        </div>
+        <!-- Box container (vertical stack) -->
+        <div class="box-container">
+          <div class="feature-box responsive-box">
+            <h3></h3>
+            <p style="font-size: 21.5px; color: #acb3bd;">
+              Pioneering sustainable medical technologies to revolutionize global healthcare through innovations in infection prevention, pain management, and neurological treatment.
+            </p>
+          </div>
+          <div class="feature-box responsive-box">
+            <h3></h3>
+            <p style="font-size: 21.5px; color: #acb3bd;">
+              With over 100 U.S. patents and 300+ international patents, Callix Research develops breakthrough medical technologies that combine innovation with accessibility.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: hero image -->
+      <div class="hero-image">
+        <img 
+          src="https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/IMG_3740.jpg" 
+          alt="Callix Research Image"
+        >
+      </div>
+    </div>
+  </section>
+  <!-- END HERO SECTION -->
+
+  <!-- Our Impact Section -->
+  <section class="section" style="background-color: #e7eff6;">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <div class="grid-three">
+        <div class="feature-box">
+          <h3>Sustainable Innovation</h3>
+          <p>Leading the way in ecological medical solutions that prioritize both patient outcomes and environmental responsibility.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Global Reach</h3>
+          <p>Our technologies, licensed to industry leaders like Abbott Laboratories and Becton Dickinson, have generated over $1.5 billion in revenues.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Award-Winning Research</h3>
+          <p>Recognized with the prestigious R&D 100 Award each decade for breakthrough innovations in medical technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breakthrough Technologies Section -->
+  <section class="section" style="background-color: #f3f9fd;">
+    <div class="container">
+      <h2>Breakthrough Technologies</h2>
+      <div class="grid-two">
+        <div class="product-card">
+          <h3>Transnasal Device: Advanced Respiratory Protection</h3>
+          <p>A revolutionary approach to respiratory health protection, our patent-pending device creates a protective barrier in nasal passages, offering:</p>
+          <ul>
+            <li>Non-invasive pathogen defense system</li>
+            <li>Ideal for healthcare workers and high-risk environments</li>
+            <li>Easy integration into daily protective routines</li>
+            <li>Proven antimicrobial properties</li>
+          </ul>
+          <p><strong>Patent Status:</strong> Pending</p>
+        </div>
+        <div class="product-card">
+          <h3>Placebo-Cued Medicine: Reimagining Pain Management</h3>
+          <p>Our patented technology transforms pain management through innovative sensory cuing, helping patients:</p>
+          <ul>
+            <li>Reduce opioid dependency while maintaining pain relief</li>
+            <li>Activate natural pain-relieving responses</li>
+            <li>Experience fewer withdrawal symptoms</li>
+            <li>Maintain quality of life during treatment</li>
+          </ul>
+          <p>
+            <strong>Patent Status:</strong>
+            <a href="https://patents.google.com/patent/US11123429" class="patent-link" target="_blank">
+              U.S. Patent No. 11,123,429
+            </a>
+          </p>
+        </div>
+        <div class="product-card">
+          <h3>Neuro-Olfactory Technology: Breakthrough in Symptom Prevention</h3>
+          <p>Our patented nasal spray technology offers innovative treatment for odor-triggered conditions:</p>
+          <ul>
+            <li>Prevention of odor-triggered migraines</li>
+            <li>Management of pregnancy-related nausea</li>
+            <li>Non-toxic, preservative-free formula</li>
+            <li>Potential applications in appetite control</li>
+          </ul>
+          <p>
+            <strong>Patent Status:</strong>
+            <a href="https://patents.google.com/patent/US9629868" class="patent-link" target="_blank">
+              U.S. Patent No. 9,629,868
+            </a>
+          </p>
+        </div>
+        <div class="product-card">
+          <h3>Placebo-Cued Medicine: Neural Applications</h3>
+          <p>Our patented technology represents a breakthrough in treating conditions influenced by neural pathways—including depression, anxiety, pain, and sleep disorders:</p>
+          <ul>
+            <li>Enhanced therapeutic outcomes through activation of natural responses</li>
+            <li>Potential for reduced medication dependency while maintaining efficacy</li>
+            <li>Applications across multiple mental health and pain conditions</li>
+            <li>Strong patent protection and market exclusivity opportunity</li>
+          </ul>
+          <p>
+            <strong>Patent Status:</strong>
+            <a href="https://patents.google.com/patent/US10556011" class="patent-link" target="_blank">
+              U.S. Patent No. 10,556,011
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Product Cards Section -->
+  <section class="section" style="background-color: #f3f9fd;">
+    <div class="container">
+      <div class="grid-four">
+        <div class="product-card">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/IMG_3656.jpg" alt="Placebo-Cued Medicine for Neurological Conditions">
+          <h3 class="device-heading"><a href="https://www.callixresearch.com/innovations/placebo-cued-medicine">Placebo-Cued Medicine for Neurological Conditions</a></h3>
+          <p>Our patented Placebo-Cued Medicine technology represents a breakthrough in treating conditions influenced by neural pathways—including depression, anxiety, pain, and sleep disorders—by incorporating distinct sensory cues that activate the body's natural therapeutic responses, potentially enhancing medication efficacy while reducing dependency.</p>
+        </div>
+        <div class="product-card">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/IMG_3652.jpg" alt="Placebo-Cued Medicine for Pain Management">
+          <h3 class="device-heading"><a href="https://www.callixresearch.com/innovations/placebo-cued-opiod">Placebo-Cued Medicine for Pain Management</a></h3>
+          <p>This pioneering technology reduces the active dosage of opioids or other pain medications through a sensory cue, harnessing the placebo effect to help alleviate pain. By supporting gradual reduction of medication, this innovation addresses opioid addiction risks and could transform pain management.</p>
+        </div>
+        <div class="product-card">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/IMG_3643.jpg" alt="Transnasal Device for Infection Prevention">
+          <h3 class="device-heading"><a href="https://www.callixresearch.com/innovations/transnasal-device-for-infection-prevention">Transnasal Device for Infection Prevention</a></h3>
+          <p>Our patent-pending transnasal device offers a novel, non-invasive method to reduce respiratory infection risks. This device targets pathogens in the nasal passages, providing antimicrobial benefits and a user-friendly design ideal for high-risk environments.</p>
+        </div>
+        <div class="product-card">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Callix-Research-/main/IMG_3661.jpg" alt="Neuro-Olfactory Device for Odor-Triggered Prevention">
+          <h3 class="device-heading"><a href="https://www.callixresearch.com/innovations/neuro-olfactory-triggered-illness-treatment">Neuro-Olfactory Device for Odor-Triggered Prevention</a></h3>
+          <p>With our patented aerosolized nasal spray, we aim to prevent odor-triggered migraines and nausea without the use of preservatives. This product, based on Generally Recognized as Safe (GRAS) ingredients, offers significant potential for over-the-counter or prescription use to mitigate triggers for migraines and other neuro-olfactory illnesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://raw.githubusercontent.com/devgandhi7/Images-/main/image-removebg-preview.png" alt="Callix Research Logo">
+        </div>
+        <div class="footer-nav">
+          <div class="footer-links">
+            <a href="https://www.callixresearch.com/about-callix-research" class="footer-link">About</a>
+            <a href="https://www.callixresearch.com/innovations" class="footer-link">Projects</a>
+            <a href="https://www.callixresearch.com/u-s-patents" class="footer-link">U.S. Patents</a>
+          </div>
+          <a href="https://www.callixresearch.com/contact-us" class="footer-link contact-link">Contact Us</a>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:info@callixresearch.com">info@callixresearch.com</a></p>
+          <p>(919) 914-0210</p>
+          <p>
+            <span style="display: block;">401-A W. Weaver Street</span>
+            <span>Carrboro, NC 27510</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color: #bbc6cd; font-size: 14px;">© 2025 Callix Research, LLC</p>
+        <p style="color: #bbc6cd; font-size: 14px;">All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
